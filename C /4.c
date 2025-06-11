@@ -1,17 +1,25 @@
-int i,j,k;
-    for(i = 1;i<=5;i++){
-        for(j = i;j<5;j++){
+#include <stdio.h>
+
+int main()
+{
+    int i, j, k, p;
+
+    for (i = 0; i <= 5; i++)
+    {
+        for (j = 0; j <= i; j++)
+        {
             printf(" ");
         }
-        for(k =1;k<=i;k++){
+        for (k = i; k < 5; k++)
+        {
+            printf("*");
+        }
+        for (p = i; p <= 5; p++)
+        {
             printf("*");
         }
         printf("\n");
     }
-    
-    // OUTPUT:-
-    //     *
-    //    **
-    //   ***
-    //  ****
-    // *****
+
+    return 0;
+}
