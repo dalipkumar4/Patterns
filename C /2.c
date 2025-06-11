@@ -1,14 +1,17 @@
-int i, j, k;
-    for(i = 1;i<=5;i++){
-        for(j = 5;j>=i; j--){
+#include <stdio.h>
+
+int main()
+{
+    int i, j;
+
+    for (i = 0; i < 5; i++)
+    {
+        for (j = 0; j <= i; j++)
+        {
             printf("*");
         }
         printf("\n");
-
     }
-    // OUTPUT:-
-    // 12345
-    // 1234
-    // 123
-    // 12
-    // 1
+
+    return 0;
+}
