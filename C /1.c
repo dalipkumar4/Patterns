@@ -1,16 +1,21 @@
-int i,j;
-    for (i = 5; i >= 1; i--)
+#include <stdio.h>
+
+int main()
+{
+    int i, j, p;
+
+    for (i = 0; i < 5; i++)
     {
-        for (j = 1; j <= i; j++)
+        for (j = i; j < 5; j++)
         {
-            printf("%d", j);
+            printf(" ");
+        }
+        for (p = 0; p <= i; p++)
+        {
+            printf("*");
         }
         printf("\n");
     }
 
-    // // OUTPUT:-
-    // // 1
-    // // 12
-    // // 123
-    // // 1234
-    // // 12345
+    return 0;
+}
